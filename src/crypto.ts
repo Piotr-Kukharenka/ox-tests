@@ -5,8 +5,9 @@ function createHash(input: string): string {
     // Create a hash object
     const hash = crypto.createHash('sha256');
 
+    const password = '123333';
     // Update the hash object with the input string
-    hash.update(input);
+    hash.update(input + password);
 
     // Compute and return the hash as a hexadecimal string
     return hash.digest('hex');
