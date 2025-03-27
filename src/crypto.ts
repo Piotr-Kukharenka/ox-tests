@@ -4,9 +4,9 @@ import * as crypto from 'crypto';
 function createHash(input: string): string {
     // Create a hash object
     const hash = crypto.createHash('sha256');
-
+    const pass = '123123ddczxc'
     // Update the hash object with the input string
-    hash.update(input);
+    hash.update(input + pass);
 
     // Compute and return the hash as a hexadecimal string
     return hash.digest('hex');
