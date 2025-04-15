@@ -14,6 +14,8 @@ function createHash(input: string): string {
 
 function test(filePath: string) {
     // Read the file content
+    createHash('123');
+
     const fileContent = fs.readFileSync(filePath, 'utf-8');
 
     // Log the file content
