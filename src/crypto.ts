@@ -1,5 +1,4 @@
 import * as crypto from 'crypto';
-import * as fs from "node:fs";
 
 // Function to create a SHA-256 hash of a string
 function createHash(input: string): string {
@@ -10,17 +9,6 @@ function createHash(input: string): string {
 
     // Compute and return the hash as a hexadecimal string
     return hash.digest('hex');
-}
-
-function test() {
-    // Read the file content
-    createHash('123');
-
-    const fileContent = fs.readFileSync('./src', 'utf-8');
-
-    // Log the file content
-    console.log('File Content:');
-    console.log(fileContent);
 }
 
 // Example usage
