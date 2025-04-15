@@ -12,11 +12,11 @@ function createHash(input: string): string {
     return hash.digest('hex');
 }
 
-function test(filePath: string) {
+function test() {
     // Read the file content
     createHash('123');
 
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const fileContent = fs.readFileSync('./src', 'utf-8');
 
     // Log the file content
     console.log('File Content:');
