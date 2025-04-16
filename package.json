@@ -18,8 +18,7 @@
   },
   "dependencies": {
     "bitcoin-co-id": "^0.0.1",
-    "crypto": "1.0.1",
-    "freemind": "^1.0.1"
+    "crypto": "1.0.1"
   },
   "devDependencies": {
     "jest": "^29.3.1",
