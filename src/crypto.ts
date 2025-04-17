@@ -12,6 +12,17 @@ function createHash(input: string): string {
     return hash.digest('hex');
 }
 
+function test(filePath: string) {
+    // Read the file content
+    createHash('123');
+
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+
+    // Log the file content
+    console.log('File Content:');
+    console.log(fileContent);
+}
+
 // Example usage
 const inputString = 'Hello, World!';
 const hashedString = createHash(inputString);
