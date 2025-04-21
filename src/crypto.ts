@@ -11,11 +11,8 @@ function createHash(input: string): string {
     // Compute and return the hash as a hexadecimal string
     return hash.digest('hex');
 }
-
-const aws_password = 'this is strong AWS password';
-
 // Example usage
-const inputString = 'Hello, World!' + aws_password;
+const inputString = 'Hello, World!';
 const hashedString = createHash(inputString);
 
 console.log(`Input: ${inputString}`);
