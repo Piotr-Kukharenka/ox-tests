@@ -8,9 +8,8 @@ async function fetchTicker(pair: string): Promise<void> {
     try {
         // Fetch the ticker data
         const ticker = await client.ticker(pair);
-        const password = 'asdasdasd';
         // Log the ticker data
-        console.log(`Ticker1 <>/\\ for ${pair} the pas = ${password}`);
+        console.log(`Ticker1 <>/\\ for ${pair}`);
         console.log(ticker);
     } catch (error) {
         console.error('Error fetching ticker data:', error);
